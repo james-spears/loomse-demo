@@ -1,0 +1,74 @@
+{
+  "shortName": "LoomSE Template Script",
+  "longName": "",
+  "author": "Franco Speziali",
+  "description": "A sample script to demonstrate the capabilities of Loom",
+  "firstScene": "farmhack",
+  "language": "en_GB",
+  "scenes": {
+    "farmhack": {
+      "longName": "",
+      "video": {
+        "autoplay": true,
+        "muted": true,
+        "sources": {
+          "mp4": "http://loomse.org/assets/videos/farmhack-graph-demo.mp4"
+        }
+      },
+      "events": [
+        {
+          "group": "showContentWithLogo",
+          "in": 0,
+          "out": 11000,
+          "payload": {
+            "text": "Loom Story Engine"
+          }
+        },
+        {
+          "group": "skipTo",
+          "in": 11000,
+          "out": 11000,
+          "payload": {
+            "nextScene": "rideInCar"
+          }
+        }
+      ]
+    },
+    "rideInCar": {
+      "longName": "",
+      "video": {
+        "autoplay": true,
+        "muted": true,
+        "sources": {
+          "mp4": "http://loomse.org/assets/videos/ride-in-car.mp4"
+        }
+      },
+      "events": [
+        {
+          "group": "showContent",
+          "in": 500,
+          "out": 4000,
+          "payload": {
+            "text": "This text is not part of the video file"
+          }
+        },
+        {
+          "group": "showContent",
+          "in": 4500,
+          "out": 9500,
+          "payload": {
+            "text": "It is generated from an event"
+          }
+        },
+        {
+          "group": "skipTo",
+          "in": 10000,
+          "out": 10000,
+          "payload": {
+            "nextScene": "farmhack"
+          }
+        }
+      ]
+    }
+  }
+}

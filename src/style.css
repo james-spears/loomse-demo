@@ -1,0 +1,14 @@
+#loom-se {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.text-content {
+    font-size: x-large;
+    margin-top: 50%;
+    position: relative;
+    font-family: Arial, serif;
+    color: azure;
+    z-index: 9999!important;
+}
