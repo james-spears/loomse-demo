@@ -5,10 +5,10 @@ import './style.css';
 
 function component() {
     const element = document.createElement('div');
-
+    element.setAttribute("id", "loom-se")
     element.innerHTML = _.join(['Hello', 'LoomSE'], ' ');
 
-    const parent = document.querySelector('#loom-se');
+    const parent = element;
     const loomSE = new LoomSE(parent, {
         width: 800,
         height: 600
